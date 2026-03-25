@@ -1,0 +1,16 @@
+/* style.css */
+
+/* Migliora la resa dei font su tutti i browser */
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Un piccolo effetto di interazione personalizzato per il bottone del carrello */
+.cart-badge {
+    transition: transform 0.2s ease-in-out;
+}
+
+.cart-badge:hover {
+    transform: scale(1.05);
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrello - E-commerce</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-100 font-sans">
+
+    <nav class="bg-white shadow-md p-4 fixed w-full top-0 z-50">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold text-indigo-600">MioShop</a>
+            <a href="cart.html" class="cart-badge relative bg-indigo-600 text-white px-4 py-2 rounded-lg hover:bg-indigo-700 transition">
+                🛒 Carrello
+                <span id="cart-count" class="absolute -top-2 -right-2 bg-red-500 text-white text-xs font-bold px-2 py-1 rounded-full">0</span>
+            </a>
+        </div>
+    </nav>
+
+    <main class="container mx-auto mt-24 p-4 max-w-4xl">
+        <div class="flex items-center justify-between mb-6">
+            <h2 class="text-3xl font-bold text-gray-800">Il tuo Carrello</h2>
+            <a href="index.html" class="text-indigo-600 hover:underline">&larr; Torna allo shop</a>
+        </div>
+        
+        <div id="cart-page-items" class="mb-6">
+            </div>
+
+        <div class="bg-white p-6 rounded-lg shadow-md flex justify-between items-center">
+            <span class="text-xl font-bold text-gray-700">Totale Ordine:</span>
+            <span id="cart-page-total" class="text-2xl font-bold text-indigo-600">€ 0.00</span>
+        </div>
+        
+        <div class="mt-6 flex justify-end">
+            <button class="bg-green-500 text-white px-8 py-3 rounded-lg text-lg font-bold hover:bg-green-600 transition shadow-lg">
+                Procedi al Pagamento
+            </button>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

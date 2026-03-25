@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop - E-commerce</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-100 font-sans">
+
+    <nav class="bg-white shadow-md p-4 fixed w-full top-0 z-50">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold text-indigo-600">MioShop</a>
+            <a href="cart.html" class="cart-badge relative bg-indigo-600 text-white px-4 py-2 rounded-lg hover:bg-indigo-700 transition">
+                🛒 Carrello
+                <span id="cart-count" class="absolute -top-2 -right-2 bg-red-500 text-white text-xs font-bold px-2 py-1 rounded-full">0</span>
+            </a>
+        </div>
+    </nav>
+
+    <main class="container mx-auto mt-24 p-4">
+        <h2 class="text-3xl font-bold mb-4 text-gray-800">I nostri Prodotti</h2>
+        
+        <div class="mb-8">
+            <input type="text" id="search-input" placeholder="Cerca un prodotto (es. Jeans)..." 
+                   class="w-full md:w-1/2 lg:w-1/3 px-4 py-3 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition">
+        </div>
+
+        <div id="products-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
